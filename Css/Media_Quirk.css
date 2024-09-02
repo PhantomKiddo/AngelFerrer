@@ -1,0 +1,115 @@
+/*}-----{Dialog Modum}-----{*/
+
+/*
+    Summary: 
+    Note:
+*/
+
+dialog
+{
+    /*Background*/
+    background: linear-gradient(to right,
+    rgba(255,255,255, .5) 0%,
+    transparent 10%,
+    transparent 90%,
+    rgba(255,255,255, .5) 100%);
+
+    box-shadow: 0px 0px 10px black;
+
+    /*width & hight*/
+    width: 500px;
+    height: fit-content;
+
+    /*Content Border*/
+    border: 0px solid white;
+    border-radius: 25px;
+    
+}
+
+.dialog_Box_Container
+{
+    display: grid;
+    justify-items: end;
+    justify-content: space-evenly;
+}
+
+dialog::backdrop
+{
+    background: rgba( 0, 0, 0, .8);
+}
+
+/*}-----{Navigation Section}-----{*/
+
+/*
+    Summary: 
+    Note:
+*/
+
+.Navigation
+{
+    /*Background*/
+    background: linear-gradient(to right,transparent 0%,rgba(255,255,255, .5) 100%);
+
+    /*width & height*/
+    width: 100px;
+    height: fit-content;
+
+    /*Content Alignment*/
+    position: fixed;
+    top: 200px;
+    left: -75px;
+
+    /*Transition*/
+    transition: left 30ms;
+    
+    /*Content Border*/
+    border: .1px, solid, white;
+    border-left-color: transparent;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    backdrop-filter: blur(25);
+}
+
+.Navigation ul
+{
+    /*Content Alignment*/
+    padding: 0%;
+    margin: 0%;
+
+    /*Opacity*/
+    opacity: 0;
+
+    /*Transition*/
+    transition: opacity 30ms;
+}
+
+.Navigation a
+{
+    /*Text Identity*/
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+
+    /*Content Alignment*/
+    padding-top: 30%;
+    padding-bottom: 30%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*}-----{Transition Animation}-----{*/
+
+.Navigation:hover
+{
+    left: -1px;
+}
+
+.Navigation ul:hover
+{
+    opacity: 1;
+}
