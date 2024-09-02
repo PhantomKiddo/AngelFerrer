@@ -1,0 +1,42 @@
+{
+    "Image":
+    [{ 
+        "Ad_Project":
+        [
+            "image/Ad_Project/Bon_Bon_Ad_Many_Languages.png",
+            "image/Ad_Project/Bon_Bon_Ad_Never_To_Old.png", 
+            "image/Ad_Project/Bon_Bon_Ad_Sweet_to_Share.png",
+            
+            "image/Ad_Project/Brillo_Ad_Prt_1.png",
+            "image/Ad_Project/Brillo_Ad_Prt_2.png",
+            "image/Ad_Project/Brillo_Ad_Prt_3.png",
+            "image/Ad_Project/Brillo_Ad_Prt_4.png",
+            
+            "image/Ad_Project/Fender_Ad_Bring the Magic.png",
+            "image/Ad_Project/Fender_Ad_Electrifying the stage.png",
+            "image/Ad_Project/Fender_Ad_Rock On With your Inner 60s & 70s.png",
+            
+            "image/Ad_Project/SmartWaterAd(Final - 1).png",
+            "image/Ad_Project/SmartWaterAd(Final - 2).png",
+            "image/Ad_Project/SmartWaterAd(Final - 3).png",
+            "image/Ad_Project/SmartWaterAd(Final - 4).png",
+            "image/Ad_Project/SmartWaterAd(Final - 5).png"   
+        ],
+        
+        "Class_Project":
+        [
+            "image/Class_Project/(W_8)_Assignment_1.png",
+            "image/Class_Project/(W_8)_Assignment_2.png",
+            "image/Class_Project/(W_8)_Assignment_3.png",
+            "image/Class_Project/(W_9)_Assignment.png",
+            "image/Class_Project/(W_10)_Assignment.JPG"
+        ], 
+        
+        "Personal_Project":
+        [
+            "image/Personal_Project/Angel Ferrer.png",
+            "image/Personal_Project/Donut.gif",
+            "image/Personal_Project/Lillia_-_League_of_Legends.png"
+        ]
+    }] 
+}
