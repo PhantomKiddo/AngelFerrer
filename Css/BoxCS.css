@@ -1,0 +1,398 @@
+/*}--------------------{BoxCS}--------------------{*/
+
+/*
+    Summary: Box Custom Sheet or BoxCS is a css framework that focus on taking care of the layout in separtate file
+    while the developers focus on creating style in another file, this help keeping the file light weight and less 
+    bloated in the files.
+*/
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Root Number}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Root value that will be use in most of the variables*/
+/*Note: */
+
+:root
+{
+    --Color_Black:Black;
+    --Color_White:White;
+    --Color_Grey:Grey;
+    --Color_Blue:Blue;
+    --Color_Green:Green;
+    --Color_Red:Red;
+
+    --Value-5: 5px;
+    --Value-10: 10px;
+    --Value-15: 15px;
+    --Value-20: 20px;
+    --Value-25: 25px;
+    --Value-30: 30px;
+    --Value-40: 40px;
+    --Value-50: 50px;
+    --Value-60: 60px;
+    --Value-75: 75px;
+    --Value-100: 100px;
+    --Value-150: 150px;
+    --Value-200: 200px;
+    --Value-250: 250px;
+    --Value-300: 300px;
+    --Value-350: 350px;
+    --Value-400: 400px;
+    --Value-450: 450px;
+    --Value-500: 500px;
+
+    --25: 25%;
+    --50: 50%;
+    --75: 75%;
+    --100: 100%;
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Horizonatal & Vertical div}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: */
+/*Note: */
+
+.H-div-Tracks
+{
+    margin: auto;
+
+    /*Flex Split*/
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.V-div-Ladder
+{
+    margin: auto;
+
+    /*Flex Split*/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Grid
+{
+    margin: auto;
+    
+    /*Flex Grid*/
+
+    display: grid;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    
+    grid-template-columns: repeat(3, var(--Value-150));
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Box Template}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: */
+/*Note: */
+
+.Box
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: var(--Value-100);
+    height: var(--Value-100);
+
+}
+
+.H-Card
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: var(--Value-400);
+    height: var(--Value-250);
+
+}
+
+.V-Card
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: var(--Value-250);
+    height: var(--Value-400);
+
+}
+
+.Slab
+{
+    background-color: green;
+
+    /*Width&Height*/
+
+    width: var(--100);
+    height: var(--Value-150);
+
+}
+
+.BillBoard
+{
+    background-color: gray;
+
+    /*Width&Height*/
+
+    width: var(--100);
+    height: var(--Value-500);
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Ancor Position}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Anchor points in all 9 directions.*/
+/*Note: */
+
+.TOP_LEFT
+{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.TOP_CENTER
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.TOP_RIGHT
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.CENTER_LEFT
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.CENTER
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CENTER_RIGHT
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.BOTTOM_LEFT
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+.BOTTOM_CENTER
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.BOTTOM_RIGHT
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Spacers}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Hidden Spacers that need to take up space.*/
+/*Note: */
+
+.Spacer-100
+{
+    background-color: transparent;
+    height: var(--Value-100);
+
+}
+
+.Spacer-200
+{
+    background-color: transparent;
+    height: var(--Value-200);
+
+}
+
+.Spacer-300
+{
+    background-color: transparent;
+    height: var(--Value-300);
+
+}
+
+.Spacer-400
+{
+    background-color: transparent;
+    height: var(--Value-400);
+
+}
+
+.Spacer-500
+{
+    background-color: transparent;
+    height: var(--Value-500);
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Margin Spacers}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Focusing on spacing inbetween.*/
+/*Note: */
+
+.H-Margin-10
+{
+    margin-left: var(--Value-10);
+    margin-right: var(--Value-10);
+
+}
+
+.H-Margin-20
+{
+    margin-left: var(--Value-20);
+    margin-right: var(--Value-20);
+
+}
+
+.H-Margin-25
+{
+    margin-left: var(--Value-25);
+    margin-right: var(--Value-25);
+}
+
+.V-Margin-10
+{
+    margin-top: var(--Value-10);
+    margin-bottom: var(--Value-10);
+
+}
+
+.V-Margin-20
+{
+    margin-top: var(--Value-20);
+    margin-bottom: var(--Value-20);
+
+}
+
+.V-Margin-25
+{
+    margin-top: var(--Value-25);
+    margin-bottom: var(--Value-25);
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Word Size}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Font Scale Templates to reduce the complication of all fonts.*/
+/*Note: */
+
+.P-10
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-10);
+    
+}
+
+.P-15
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-15);
+
+}
+
+.P-20
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-20);
+
+}
+
+.P-25
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-25);
+
+}
+
+.P-30
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-30);
+
+}
+
+.P-40
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-40);
+
+}
+
+.P-60
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--Value-60);
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Test trinkets}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Hidden feature that need to be tested before making into live emmet.*/
+/*Note: */
+
+.Compact
+{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.BeReal
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
