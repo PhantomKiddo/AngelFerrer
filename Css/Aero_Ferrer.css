@@ -93,6 +93,7 @@ html
 
 header
 {
+    
     /*Background*/
     background-color: black;
 
@@ -103,14 +104,10 @@ header
     /*Content Allignment*/
     text-align: center;
 
-    /*Self Allignment*/
-    margin: auto;
-    padding-top: 5px;
-    padding-bottom: 10px;
-
     /*Content Borders*/
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    
 }
 
 body
@@ -130,10 +127,6 @@ footer
 
     /*Content Allignment*/
     text-align: center;
-
-    /*Self Allignment*/
-    margin: auto;
-    padding-top: 10px;
     
     /*Content Borders*/
     border-top-left-radius: 25px;
@@ -189,11 +182,6 @@ footer
     /*Self Alignment*/
     margin-bottom: 25px;
 
-    /**/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 /*Button Class*/
@@ -356,23 +344,4 @@ footer
     */
     display: flex;
     align-items: baseline;
-}
-
-.Grid
-{
-    /*
-    Summary: Align the grid into grid. 
-    */
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    justify-content: space-evenly;
-    justify-items: center;
-}
-
-.Spacer_250
-{
-    /*
-    Summary: Only for space out Content
-    */
-    height: 250px;
 }
