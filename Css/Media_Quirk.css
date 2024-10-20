@@ -38,6 +38,8 @@ dialog::backdrop
     background: rgba( 0, 0, 0, .8);
 }
 
+
+
 /*}-----{Navigation Section}-----{*/
 
 /*
@@ -54,8 +56,13 @@ dialog::backdrop
     width: 100px;
     height: fit-content;
 
-
     /*Content Alignment*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+
     padding: 0px;
     position: fixed;
     top: 200px;
@@ -66,7 +73,6 @@ dialog::backdrop
     
     /*Content Border*/
     border: .1px, solid, white;
-    border-left-color: transparent;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 
@@ -77,13 +83,9 @@ dialog::backdrop
 {
     list-style: none;
 
-    /*Content Alignment*/
-    padding-top: 30%;
-    padding-bottom: 30%;
-    padding-right: 15px;
-    display: flex;
-    justify-content: space-evenly;
-
+    /*Padding*/
+    padding: 25px;
+    padding-left: 10px;
 }
 
 .Navigation a
@@ -108,4 +110,35 @@ dialog::backdrop
 .Navigation a:hover
 {
     color: white;
+}
+
+/*}-----{Mobile NavBar}-----{*/
+
+@media(width <= 1050px)
+{
+    .Navigation
+    {
+        background-color: rgba( 255, 255, 255, .5);
+
+        z-index: 1;
+
+        width: 800px;
+        height: 50px;
+        
+        top: 75vh;
+        left: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .Navigation:hover
+    {
+        left: auto;
+    }
 }
