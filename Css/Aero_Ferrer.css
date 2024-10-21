@@ -171,7 +171,7 @@ footer
     /*}-{Front Visual Display}-{*/
 
     /*Background*/
-    background: url(/image/Web_Images/AchingSilkyFoal-size_restricted.gif);
+    background-image: url(/image/Web_Images/AchingSilkyFoal-size_restricted.gif);
     background-repeat: no-repeat;
     background-size: cover;
 
