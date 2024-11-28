@@ -65,7 +65,7 @@ dialog::backdrop
 
     padding: 0px;
     position: fixed;
-    top: 200px;
+    top: 25px;
     left: -75px;
 
     /*Transition*/
@@ -85,7 +85,6 @@ dialog::backdrop
 
     /*Padding*/
     padding: 25px;
-    padding-left: 10px;
 }
 
 .Navigation a
@@ -97,7 +96,6 @@ dialog::backdrop
     font-weight: normal;
     text-decoration: none;
     text-align: center;
-
 }
 
 /*}-----{Transition Animation}-----{*/
@@ -116,6 +114,11 @@ dialog::backdrop
 
 @media(width <= 1050px)
 {
+    img.icon
+    {
+        height: 30px;
+    }
+
     .Navigation
     {
         background-color: rgba( 255, 255, 255, .5);
@@ -123,9 +126,9 @@ dialog::backdrop
         z-index: 1;
 
         width: 800px;
-        height: 50px;
+        height: 75px;
         
-        top: 75vh;
+        top: 80vh;
         left: auto;
 
         display: flex;
@@ -135,6 +138,12 @@ dialog::backdrop
 
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
+    }
+
+    .Navigation li
+    {
+        /*Padding*/
+        padding: 0px;
     }
 
     .Navigation:hover

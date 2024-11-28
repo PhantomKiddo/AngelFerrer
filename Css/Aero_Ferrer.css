@@ -89,6 +89,7 @@ html
 {
     /*Background*/
     background-color: green;
+    background-attachment: fixed;
 }
 
 header
@@ -171,7 +172,7 @@ footer
     /*}-{Front Visual Display}-{*/
 
     /*Background*/
-    background-image: url(../image/Web_Images/AchingSilkyFoal-size_restricted.gif);
+    background-image: url('image\Web_Images\Silk_Aero.gif');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -327,6 +328,11 @@ footer
 /*
     Summary:
 */
+
+.test
+{
+    stroke: black;
+}
 
 .Text_Color_Black
 {
