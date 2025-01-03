@@ -38,5 +38,25 @@
             "image/Personal_Project/Donut.gif",
             "image/Personal_Project/Lillia_-_League_of_Legends.png"
         ]
-    }] 
+    }],
+    
+    "Video":
+    [{
+        "Film":
+        [
+            "Video/Angel_3Shot_Scene1.mp4",
+            "Video/Angel_5Shot_Scene1.mp4",
+            "Video/Angel_Edward_Week5.mp4",
+            "Video/Angel_Felix_Week5.mp4",
+            "Video/Nike Commercial_No_excuses_AngelFerrer.mp4",
+            "Video/The Biggest Bird(Final).mp4"
+        ],
+
+        "Animation":
+        [
+            "Video/Handy_Animation.mp4",
+            "Video/Char_Walk_TEMPLATE.mp4",
+            "Video/How_to_get_information_in_DndVideo.mp4"
+        ]
+    }]
 }
