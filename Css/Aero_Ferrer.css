@@ -172,7 +172,7 @@ footer
     /*}-{Front Visual Display}-{*/
 
     /*Background*/
-    background-image: url('../image/Web_Images/WaterFall.gif');
+    background-image: url('image\Web_Images\Silk_Aero.gif');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -236,7 +236,7 @@ footer
     Note:
 */
 
-.Content_display_1
+.Content_Display_1
 {
     /*Background*/
     background:rgba(255,255,255, .5);
@@ -246,31 +246,25 @@ footer
     height: auto;
 
     /*Self Alignment*/
-    margin: 25px;
-    padding-top: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 30px;
+    margin: 10px;
+    padding: 25px;
 
     /*Content Border*/
     border-radius: 25px;
 }
 
-.Content_display_2
+.Content_Display_2
 {
     /*Background*/
     background-color: rgba(255,255,255, .5);
 
     /*width & height*/
     width: auto;
-    height: auto;
+    height: fit-content;
 
     /*Self Alignment*/
-    margin: 25px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 5px;
+    margin: 20px;
+    padding: 10px;
 
     /*Content Border*/
     border-radius: 25px;
@@ -293,7 +287,7 @@ footer
     top: 0%;
 }
 
-.Content_Image_display
+.Content_Image_Display
 {
     /*Background*/
     background-color: rgba(255,255,255, .5);
@@ -304,7 +298,7 @@ footer
 
     /*Self Alignment*/
     margin: 10%;
-    padding: 25px;
+    padding: 20px;
 
     transition: padding 30ms;
 
@@ -316,11 +310,24 @@ footer
     cursor: pointer;
 }
 
-.Content_Image_display:hover
+.Content_Image_Display:hover
 {
     
     padding-bottom: 50px;
     
+}
+
+.Content_Video_Display
+{
+    /*Background*/
+    background-color: rgba(255,255,255, .5);
+
+    /*Self Alignment*/
+    margin: 25px;
+    padding: 25px;
+
+    /*Content Border*/
+    border-radius: 25px;
 }
 
 /*Special Tags*/
@@ -328,11 +335,6 @@ footer
 /*
     Summary:
 */
-
-.test
-{
-    stroke: black;
-}
 
 .Text_Color_Black
 {
@@ -345,9 +347,6 @@ footer
 
 .H_box
 {
-    /*
-    Summary: Separate the boxed Horizontally
-    */
-    display: flex;
+    display:flex;
     align-items: baseline;
 }

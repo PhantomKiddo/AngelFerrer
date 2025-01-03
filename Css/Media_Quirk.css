@@ -65,7 +65,7 @@ dialog::backdrop
 
     padding: 0px;
     position: fixed;
-    top: 25px;
+    top: 15vh;
     left: -75px;
 
     /*Transition*/
