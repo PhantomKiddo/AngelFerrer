@@ -172,7 +172,7 @@ footer
     /*}-{Front Visual Display}-{*/
 
     /*Background*/
-    background-image: url('image\Web_Images\Silk_Aero.gif');
+    background-image: url('..\image\Web_Images\Silk_Aero.gif');
     background-repeat: no-repeat;
     background-size: cover;
 
