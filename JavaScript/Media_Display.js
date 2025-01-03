@@ -1,4 +1,4 @@
-const Data = "Image_DataBank.JSON";
+const Data = "Media_DataBank.JSON";
 
 const Data_Value = fetch(Data).then(Data_Respond => Data_Respond.json())
 .then(Value => 
@@ -9,64 +9,108 @@ const Data_Value = fetch(Data).then(Data_Respond => Data_Respond.json())
 
     const Personal_Project = Value.Image[0].Personal_Project;
 
-    for (let i = 0; i < Class_Project.length; i++) 
+    const Vid_Film = Value.Video[0].Film;
+
+    const Vid_Animation = Value.Video[0].Animation;
+
+    
+    if (document.getElementById("CLASS_PROJECT")) 
     {
-    
-        const Button_Display = document.createElement("button");
-        Button_Display.className = "Content_Image_display";
-        Button_Display.setAttribute("onclick", "Image_Modal_Open('" + Class_Project[i] + "')")
-    
-        const Image = document.createElement("img");
-        Image.src = Class_Project[i]
-        Image.width = 150;
-        Image.alt = "Image Not Found";
-    
-        //const Title_Image = document.createElement("h3");
-        //Title_Image.textContent = Class_Project[i]
-    
-        Button_Display.append(Image);
-    
-        document.getElementById("CLASS_PROJECT").appendChild(Button_Display);
+        for (let i = 0; i < Class_Project.length; i++) 
+        {
+        
+            const Button_Display = document.createElement("button");
+            Button_Display.className = "Content_Image_Display";
+            Button_Display.setAttribute("onclick", "Image_Modal_Open('" + Class_Project[i] + "')")
+        
+            const Image = document.createElement("img");
+            Image.src = Class_Project[i]
+            Image.width = 150;
+            Image.alt = "Image Not Found";
+        
+            const Title_Image = document.createElement("h3");
+            Title_Image.textContent = Class_Project[i].substr(20)
+        
+            Button_Display.append(Image, Title_Image);
+        
+            document.getElementById("CLASS_PROJECT").appendChild(Button_Display);
+        }
     }
 
-    for (let i = 0; i < Ad_Project_List.length; i++) 
+    if (document.getElementById("AD_PROJECT")) 
     {
-
-        const Button_Display = document.createElement("button");
-        Button_Display.className = "Content_Image_display";
-        Button_Display.setAttribute("onclick", "Image_Modal_Open('" + Ad_Project_List[i] + "')")
-
-        const Image = document.createElement("img");
-        Image.src = Ad_Project_List[i]
-        Image.width = 150;
-        Image.alt = "Image Not Found";
-
-        //const Title_Image = document.createElement("h3");
-        //Title_Image.textContent = Ad_Project_List[i]
-
-        Button_Display.append(Image);
-
-        document.getElementById("AD_PROJECT").appendChild(Button_Display);
-    }
-
-    for (let i = 0; i < Personal_Project.length; i++) 
+        for (let i = 0; i < Ad_Project_List.length; i++) 
         {
     
             const Button_Display = document.createElement("button");
-            Button_Display.className = "Content_Image_display";
-            Button_Display.setAttribute("onclick", "Image_Modal_Open('" + Personal_Project[i] + "')")
+            Button_Display.className = "Content_Image_Display";
+            Button_Display.setAttribute("onclick", "Image_Modal_Open('" + Ad_Project_List[i] + "')")
     
+            const Image = document.createElement("img");
+            Image.src = Ad_Project_List[i]
+            Image.width = 150;
+            Image.alt = "Image Not Found";
+    
+            const Title_Image = document.createElement("h3");
+            Title_Image.textContent = Ad_Project_List[i].substr(17)
+    
+            Button_Display.append(Image,Title_Image);
+    
+            document.getElementById("AD_PROJECT").appendChild(Button_Display);
+        }
+    }
+
+    if (document.getElementById("PERSONAL_PROJECT")) 
+    {
+        for (let i = 0; i < Personal_Project.length; i++) 
+        {
+        
+            const Button_Display = document.createElement("button");
+            Button_Display.className = "Content_Image_Display";
+            Button_Display.setAttribute("onclick", "Image_Modal_Open('" + Personal_Project[i] + "')")
+        
             const Image = document.createElement("img");
             Image.src = Personal_Project[i]
             Image.width = 150;
             Image.alt = "Image Not Found";
-    
-            //const Title_Image = document.createElement("h3");
-            //Title_Image.textContent = Personal_Project[i]
-    
-            Button_Display.append(Image);
-    
+        
+            const Title_Image = document.createElement("h3");
+            Title_Image.textContent = Personal_Project[i].substr(23)
+        
+            Button_Display.append(Image,Title_Image);
+        
             document.getElementById("PERSONAL_PROJECT").appendChild(Button_Display);
         }  
     }
-)
+
+    if (document.getElementById("FILM")) 
+    {
+        for (let i = 0; i < Vid_Film.length; i++) 
+        {
+            const Vid = document.createElement("video");
+            Vid.src = Vid_Film[i];
+            Vid.width = 600;
+            Vid.controls = true;
+
+            Vid.className = "Content_Video_Display";
+                    
+            document.getElementById("FILM").appendChild(Vid);
+        }
+    }
+
+    if (document.getElementById("ANIMATION")) 
+    {
+        for (let i = 0; i < Vid_Animation.length; i++) 
+        {
+            const Vid = document.createElement("video");
+            Vid.src = Vid_Animation[i];
+            Vid.width = 600;
+            Vid.controls = true;
+
+            Vid.className = "Content_Video_Display";
+                    
+            document.getElementById("ANIMATION").appendChild(Vid);
+        }
+    }
+  
+})
