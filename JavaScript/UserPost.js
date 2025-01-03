@@ -15,7 +15,7 @@ async function QueryPost()
     {
         // Summary: This is a ContentBox
         const ContentBox = document.createElement("div");
-        ContentBox.className = "Content_display_1";
+        ContentBox.className = "Content_Display_1";
 
         // Summary: This is a HboxContainer
         const HboxContainer = document.createElement("div");
