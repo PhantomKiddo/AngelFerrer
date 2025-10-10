@@ -25,24 +25,32 @@ fetch(url)
        
         //________________________________________(Google_Sheet_datafetch)
         const Content = document.createElement('div');
-        Content.className = 'Content_Block';
+        Content.className = 'Content_Block Content_Block_Structure';
 
         const Title = document.createElement('h2');
-        Title.className = 'WhtText';
+        Title.className = 'WhtText Grid_A';
 
         const Date_ = document.createElement('h3');
-        Date_.className = 'WhtText';
+        Date_.className = 'WhtText Grid_B';
 
         const Description = document.createElement('p');
+        Description.className = 'WhtText Grid_C';
 
         const Image_ = document.createElement('img');
 
 
         
         Title.textContent = element.c[0].v;
-        Date_.textContent = element.c[1].f
+        Date_.textContent = element.c[1].f;
         Description.textContent = element.c[2].v
 
-        console.log(Description)
+        Content.append(Title, Date_, Description);
+
+        document.getElementById('Display').append(Content)
+
+        console.log(Content)
+        
+
+        
     });
 })

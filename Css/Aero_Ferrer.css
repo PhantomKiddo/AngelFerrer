@@ -109,6 +109,22 @@ h3{font-size: 15px;margin: 10px;}
     border-radius: 25px;
 }
 
+.Content_Block_Structure
+{
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: grid;
+
+    grid-template-areas: 
+    "A B ."
+    "C C D";
+
+    align-items: baseline;
+    justify-items: start;
+}
+
 .Button
 {
     background-color: transparent;
