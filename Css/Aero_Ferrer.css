@@ -1,352 +1,126 @@
-/*
-}--------------------====================--------------------{
-                       [Aero_Ferrer.Css]
-}--------------------====================--------------------{
-*/
+/*-----{Properties}-----*/
 
-/*Important Features*/
-
-/*
-    Summary: This top row are the editable feature that can be change & adjusted, or updated 
-    by the developer (Angel Ferrer). If anyone who are reading this, you can only edit the top
-    features DO NOT edit the middle or bottom content unles you know what you're doing.
-
-    note: if anything have change in inspector you can refresh the page.
-*/
-
-p
+@property --Main-Color
 {
-    /*Text Color*/
-    color: Black;
+    syntax: '<color>';
+    inherits: true;
 
-    /*Text Identity*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-
+    initial-value: green;
 }
 
-h1
-{
-    /*Text Color*/
-    color: white;
+.WhtText{color: white;}
 
-    /*Text Identity*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
 
-    /*Content Alignment*/
-    margin-bottom: 0px;
-    
-}
 
-h2
-{
-    /*Text Color*/
-    color: white;
+/*-----{Main}-----*/
 
-    /*Text Identity*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-
-    /*Content Alignment*/
-    margin-bottom: 0px;
-
-}
-
-h3
-{
-    /*Text Color*/
-    color: Black;
-
-    /*Text Identity*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-
-    /*Content Alignment*/
-    margin-bottom: 0px;
-    
-}
-
-img
-{
-    /*Content Alignment*/
-    padding-top: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 25px;
-}
-
-/*Main Tags Display*/
-
-/*
-    Summary: This middle section only reserve for adjust and and make smaller changes in the main tags
-*/
 html
 {
-    /*Background*/
     background-color: green;
-    background-attachment: fixed;
+    
 }
 
 header
 {
-    
-    /*Background*/
     background-color: black;
 
-    /*width & height*/
-    width: 1000px;
-    height: 100px;
+    width: 100%;
+    height: 150px;
 
-    /*Content Allignment*/
-    text-align: center;
-
-    /*Content Borders*/
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 body
 {
-    /*Stupid margin spacer >:(*/
+    background-color: transparent;
+
     margin: 0%;
 }
 
 footer
 {
-    /*Background*/
     background-color: black;
 
-    /*width & height*/
-    width: 1000px;
-    height: 100px;
+    width: 100%;
+    height: 150px;
 
-    /*Content Allignment*/
-    text-align: center;
-    
-    /*Content Borders*/
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
-/*Class Tags*/
+p,h1,h2,h3
+{font-family: Arial, Helvetica, sans-serif;}
 
-/*
-    Summary: These Content are not to be edited, These tags are named to be displayed.
-    these changes are only for the main developer (Angel Ferrer). 
+p{font-size: 11px;}
 
-    Note: These Class name will be updated until further noticed.
-*/
+h1{font-size: 30px; margin: 10px;}
+
+h2{font-size: 25px; margin: 10px;}
+
+h3{font-size: 15px;margin: 10px;}
+
+
+
+/*-----{Classes}-----*/
 
 .Glass
 {
-    /*Background*/
     background: linear-gradient(to right, 
-    rgba(255,255,255, .5) 0%, 
-    transparent 5%,
-    transparent 95%, 
-    rgba(255,255,255, .5) 100%);
+    rgba(255, 255, 255, .3) 0%,  
+    transparent 10%,
+    transparent 90%,
+    rgba(255, 255, 255, .3) 100%);
 
-    box-shadow: 0px 0px 50px black;
+    backdrop-filter: blur(10px);
 
-    /*Width & height*/
-    width: 800px;
-    height: fit-content;
+    border-left: .5px solid white;
+    border-right: .5px solid white;
 
-    /*Self Allignment*/
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-    /*Filter blur*/
-    backdrop-filter: blur(2px);
-}
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, .5);
 
-.FVC
-{
-    /*}-{Front Visual Display}-{*/
+    width: 70%;
+    height: 100%;
 
-    /*Background*/
-    background-image: url("../image/Web_Images/WaterFall.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    /*width & height*/
-    width: auto;
-    height: 400px;
-
-    /*Self Alignment*/
-    margin-bottom: 25px;
 
 }
 
-/*Button Class*/
-
-/*
-    Summary: This is for display Buttons.
-
-    Note: Buttons variations contains numberal value on what button is being displayed.
-*/
-
-.Fancy_Button_1
+.Banner
 {
-    /*Background*/
-    background-color: transparent;
-
-    /*Text Identity*/
-    color: cyan;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-
-    transition: color 30ms;
-
-    /*width & height*/
-    width: fit-content;
-    height: 50px;
-
-    /*Self Alignment*/
-    padding-left: 20px;
-    padding-right: 20px;
-
-    /*Content Border*/
-    border: 3px, solid, cyan;
-    border-radius: 25px;
-
-    transition: border 30ms;
-}
-
-.Fancy_Button_1:hover
-{
-    color: white;
-    border: 3px, solid white;
-    cursor: pointer;
-}
-
-/*Content Box*/
-
-/*
-    Summary: 
-
-    Note:
-*/
-
-.Content_Display_1
-{
-    /*Background*/
-    background:rgba(255,255,255, .5);
-
-    /*width & height*/
-    width: auto;
-    height: auto;
-
-    /*Self Alignment*/
-    margin: 10px;
-    padding: 25px;
-
-    /*Content Border*/
-    border-radius: 25px;
-}
-
-.Content_Display_2
-{
-    /*Background*/
-    background-color: rgba(255,255,255, .5);
-
-    /*width & height*/
-    width: auto;
-    height: fit-content;
-
-    /*Self Alignment*/
-    margin: 20px;
-    padding: 10px;
-
-    /*Content Border*/
-    border-radius: 25px;
-}
-
-.Black_Bar_Header
-{
-    /*Background*/
     background-color: black;
 
-    /*Content Alignment*/
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    position: sticky;
-    top: 0%;
+    width: 100%;
+    height: 100px;
 }
 
-.Content_Image_Display
+.Content_Block
 {
-    /*Background*/
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255, 255, 255, .3);
 
-    /*width & height*/
     width: fit-content;
     height: fit-content;
 
-    /*Self Alignment*/
-    margin: 10%;
-    padding: 20px;
-
-    transition: padding 30ms;
-
-    /*Content Border*/
-    border: 0px none transparent;
-    border-radius: 25px;
-
-    /*Cursor*/
-    cursor: pointer;
-}
-
-.Content_Image_Display:hover
-{
-    
-    padding-bottom: 50px;
-    
-}
-
-.Content_Video_Display
-{
-    /*Background*/
-    background-color: rgba(255,255,255, .5);
-
-    /*Self Alignment*/
     margin: 25px;
     padding: 25px;
 
-    /*Content Border*/
+    
+
+    border: .5px solid white;
     border-radius: 25px;
 }
 
-/*Special Tags*/
-
-/*
-    Summary:
-*/
-
-.Text_Color_Black
+.Button
 {
-    /*
-    Summary: Turn a simple text into black
-    */
+    background-color: transparent;
 
-    color: black;
+    padding: 0.5px;
+
+    border: 2px solid white;
+    border-radius: 50px;
+
+    box-shadow: 0px 5px 0px black;
 }
 
-.H_box
-{
-    display:flex;
-    align-items: baseline;
-}
+
+
+/*-----{}-----*/

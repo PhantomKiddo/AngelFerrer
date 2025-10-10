@@ -1,153 +1,228 @@
-/*}-----{Dialog Modum}-----{*/
+/*-----{}-----*/
 
-/*
-    Summary: 
-    Note:
-*/
-
-dialog
+html
 {
-    /*Background*/
-    background: linear-gradient(to right,
-    rgba(255,255,255, .5) 0%,
-    transparent 10%,
-    transparent 90%,
-    rgba(255,255,255, .5) 100%);
+    cursor: url(../Image/UI/Icons_Arrows.svg), auto;
+}
 
-    box-shadow: 0px 0px 10px black;
 
-    /*width & hight*/
-    width: 500px;
+
+/*-----{Menu_Tab}-----*/
+
+li>a>img
+{
+    width: 50%;
+
+    margin: 25%;
+
+    aspect-ratio: 3/2;
+}
+
+a{cursor: url(../Image/UI/Icons_Pointer.svg), auto;}
+
+.Menu
+{
+    background-color: rgba(255, 255, 255, 0.3);
+
+    width: 10%;
     height: fit-content;
 
-    /*Content Border*/
-    border: 0px solid white;
-    border-radius: 25px;
-    
-}
+    margin: 0px;
+    padding: 0px;
 
-.dialog_Box_Container
-{
-    display: grid;
-    justify-items: end;
-    justify-content: space-evenly;
-}
+    list-style: none;
 
-dialog::backdrop
-{
-    background: rgba( 0, 0, 0, .8);
-}
-
-
-
-/*}-----{Navigation Section}-----{*/
-
-/*
-    Summary: 
-    Note:
-*/
-
-.Navigation
-{
-    /*Background*/
-    background: linear-gradient(to right,transparent 0%,rgba(255,255,255, .5) 100%);
-
-    /*width & height*/
-    width: 100px;
-    height: fit-content;
-
-    /*Content Alignment*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 
-    
+    backdrop-filter: blur(10px);
 
-    padding: 0px;
-    position: fixed;
-    top: 15vh;
-    left: -75px;
+    position: absolute;
+    left: -7.5%;
+    top: 50%;
 
-    /*Transition*/
-    transition: left 30ms;
-    
-    /*Content Border*/
-    border: .1px, solid, white;
+    border: .5px solid white;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-
-    backdrop-filter: blur(25);
 }
 
-.Navigation li
+.Menu:hover
 {
-    list-style: none;
-
-    /*Padding*/
-    padding: 25px;
+    animation-name: Menu_Expand;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
-.Navigation a
+.Menu:not(:hover)
 {
-    /*Text Identity*/
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    text-decoration: none;
-    text-align: center;
+    animation-name: Menu_Collapse;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
-/*}-----{Transition Animation}-----{*/
-
-.Navigation:hover
+@keyframes Menu_Expand
 {
-    left: -1px;
+    0%{transform: translateX(0%);}
+    5%{transform: translateX(-5%);}
+    100%{transform: translateX(50%);}
 }
 
-.Navigation a:hover
+@keyframes Menu_Collapse
 {
-    color: white;
+    0%{transform: translateX(50%);}
+    5%{transform: translateX(-5%);}
+    100%{transform: translateX(0%);}
 }
 
-/*}-----{Mobile NavBar}-----{*/
 
-@media(width <= 1050px)
+
+/*-----{Button}-----*/
+
+.Button:hover
 {
-    img.icon
+    cursor: url(../Image/UI/Icons_Pointer.svg), auto;
+
+    animation-name: Button_hover;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.Button:not(:hover)
+{
+    animation-name: Button_unhover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Button_hover 
+{
+    0%
     {
-        height: 30px;
+        box-shadow: 0px 5px 0px black;
     }
 
-    .Navigation
+    5%
     {
-        background-color: rgba( 255, 255, 255, .5);
-
-        z-index: 1;
-
-        width: 800px;
-        height: 75px;
-        
-        top: 80vh;
-        left: auto;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
+        box-shadow: 0px 10px 0px black;
+        transform: translateY(-5px);
     }
 
-    .Navigation li
+    100%
     {
-        /*Padding*/
-        padding: 0px;
+        border: 2px solid blue;
+
+        box-shadow: 0px 0px 0px black;
+        transform: translateY(5px);
+    }  
+}
+
+@keyframes Button_unhover
+{
+    0%
+    {
+        border: 2px solid blue;
+
+        box-shadow: 0px 0px 0px black;
+        transform: translateY(5px);
     }
 
-    .Navigation:hover
+    100%
     {
-        left: auto;
+        border: 2px solid white;
+
+        box-shadow: 0px 5px 0px black;
+        transform: translateY(0px);
+    }  
+}
+
+
+
+/*-----{Scrollbar}-----*/
+
+::-webkit-scrollbar
+{
+    background-color: grey;
+    width: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+
+
+/*-----{Modem}-----*/
+
+dialog
+{
+    background-color: rgba(255, 255, 255, 0.3);
+
+    padding: 5%;
+
+    backdrop-filter: blur(10px);
+
+    display: grid;
+    grid-template-areas: 
+    "A . ."
+    "B B B"
+    ". . C";
+
+    gap: 10px;
+
+    border: .5px solid white;
+    border-radius: 25px;
+
+}
+
+dialog::backdrop{background-color: rgba(0, 0, 0, 0.3);}
+
+.HIDEMODAL{opacity: 0;}
+
+/*-----{Gallary}-----*/
+
+.Media_Scrollbar
+{
+    width: 80%;
+
+    display: grid;
+
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+
+    overflow-x: auto;
+
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+    mask-repeat: no-repeat;
+
+    mask-size: 100% 100%;
+}
+
+.Gallery_Thumbnail{cursor: url(../Image/UI/Icons_Pointer.svg), auto;}
+
+.Gallery_Thumbnail:hover
+{
+    animation-name: Selected;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes Selected
+{
+    0%
+    {
+        transform: translateY(0);
     }
+
+    100%
+    {
+        transform: translateY(-15px);
+    }
+
 }

@@ -7,98 +7,76 @@
 */
 
 /*}-----+-----====================-----+-----{*/
-/*}--------------------{Root Number}--------------------{*/
-/*}-----+-----====================-----+-----{*/
-
-/*Summary: Root value that will be use in most of the variables*/
-/*Note: */
-
-:root
-{
-    --Color_Black:Black;
-    --Color_White:White;
-    --Color_Grey:Grey;
-    --Color_Blue:Blue;
-    --Color_Green:Green;
-    --Color_Red:Red;
-
-    --Value-5: 5px;
-    --Value-10: 10px;
-    --Value-15: 15px;
-    --Value-20: 20px;
-    --Value-25: 25px;
-    --Value-30: 30px;
-    --Value-40: 40px;
-    --Value-50: 50px;
-    --Value-60: 60px;
-    --Value-75: 75px;
-    --Value-100: 100px;
-    --Value-150: 150px;
-    --Value-200: 200px;
-    --Value-250: 250px;
-    --Value-300: 300px;
-    --Value-350: 350px;
-    --Value-400: 400px;
-    --Value-450: 450px;
-    --Value-500: 500px;
-
-    --25: 25%;
-    --50: 50%;
-    --75: 75%;
-    --100: 100%;
-}
-
-/*}-----+-----====================-----+-----{*/
-/*}--------------------{Horizonatal & Vertical div}--------------------{*/
+/*}--------------------{}--------------------{*/
 /*}-----+-----====================-----+-----{*/
 
 /*Summary: */
 /*Note: */
 
+
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Horizonatal & Vertical div}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Flex display directions horizontal or vertical.*/
+/*Note: */
+
 .H-div-Tracks
 {
-    margin: auto;
-
-    /*Flex Split*/
     
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
     align-items: center;
 }
 
 .V-div-Ladder
 {
-    margin: auto;
-
-    /*Flex Split*/
     
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
     align-items: center;
 }
 
-.Grid
-{
-    margin: auto;
-    
-    /*Flex Grid*/
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Flex Features}--------------------{*/
+/*}-----+-----====================-----+-----{*/
 
-    display: grid;
-    align-content: space-evenly;
+/*Summary: */
+/*Note: */
+
+.Flex-item-Left
+{
+    align-items: flex-start;
+}
+
+.Flex-item-Right
+{
+    align-items: flex-end;
+}
+
+.Between
+{
+    justify-content: space-between;
+}
+
+.Around
+{
+    justify-content: space-around;
+}
+
+.Evenly
+{
     justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    
-    grid-template-columns: repeat(3, var(--Value-150));
 }
 
 /*}-----+-----====================-----+-----{*/
 /*}--------------------{Box Template}--------------------{*/
 /*}-----+-----====================-----+-----{*/
 
-/*Summary: */
+/*Summary: Non Destructive templates.*/
 /*Note: */
 
 .Box
@@ -107,8 +85,8 @@
 
     /*Width&Height*/
 
-    width: var(--Value-100);
-    height: var(--Value-100);
+    width: 100px;
+    height: 100%;
 
 }
 
@@ -118,8 +96,8 @@
 
     /*Width&Height*/
 
-    width: var(--Value-400);
-    height: var(--Value-250);
+    width: 0%;
+    height: 0%;
 
 }
 
@@ -129,14 +107,14 @@
 
     /*Width&Height*/
 
-    width: var(--Value-250);
-    height: var(--Value-400);
+    width: 0%;
+    height: 0%;
 
 }
 
 .Slab
 {
-    background-color: green;
+    background-color: blueviolet;
 
     /*Width&Height*/
 
@@ -147,17 +125,17 @@
 
 .BillBoard
 {
-    background-color: gray;
+    background-color: transparent;
 
     /*Width&Height*/
 
-    width: var(--100);
-    height: var(--Value-500);
+    width: 100%;
+    height: 100%;
 
 }
 
 /*}-----+-----====================-----+-----{*/
-/*}--------------------{Ancor Position}--------------------{*/
+/*}--------------------{Anchor Position}--------------------{*/
 /*}-----+-----====================-----+-----{*/
 
 /*Summary: Anchor points in all 9 directions.*/
@@ -242,35 +220,35 @@
 .Spacer-100
 {
     background-color: transparent;
-    height: var(--Value-100);
+    height: 100px;
 
 }
 
 .Spacer-200
 {
     background-color: transparent;
-    height: var(--Value-200);
+    height: 200px;
 
 }
 
 .Spacer-300
 {
     background-color: transparent;
-    height: var(--Value-300);
+    height: 300px;
 
 }
 
 .Spacer-400
 {
     background-color: transparent;
-    height: var(--Value-400);
+    height: 400px;
 
 }
 
 .Spacer-500
 {
     background-color: transparent;
-    height: var(--Value-500);
+    height: 500px;
 
 }
 
@@ -281,44 +259,54 @@
 /*Summary: Focusing on spacing inbetween.*/
 /*Note: */
 
+.Margin_Flatline
+{
+    margin: 0%;
+}
+
+.Margin_Center
+{
+    margin: auto;
+}
+
 .H-Margin-10
 {
-    margin-left: var(--Value-10);
-    margin-right: var(--Value-10);
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
 .H-Margin-20
 {
-    margin-left: var(--Value-20);
-    margin-right: var(--Value-20);
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
 .H-Margin-25
 {
-    margin-left: var(--Value-25);
-    margin-right: var(--Value-25);
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .V-Margin-10
 {
-    margin-top: var(--Value-10);
-    margin-bottom: var(--Value-10);
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
 .V-Margin-20
 {
-    margin-top: var(--Value-20);
-    margin-bottom: var(--Value-20);
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
 .V-Margin-25
 {
-    margin-top: var(--Value-25);
-    margin-bottom: var(--Value-25);
+    margin-top: 25px;
+    margin-bottom: 25px;
 
 }
 
@@ -331,50 +319,50 @@
 
 .P-10
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-10);
+
+    font-size: 10px;
     
 }
 
 .P-15
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-15);
+
+    font-size: 15px;
 
 }
 
 .P-20
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-20);
+ 
+    font-size: 20px;
 
 }
 
 .P-25
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-25);
+ 
+    font-size: 25px;
 
 }
 
 .P-30
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-30);
+ 
+    font-size: 30px;
 
 }
 
 .P-40
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-40);
+
+    font-size: 40px;
 
 }
 
 .P-60
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--Value-60);
+
+    font-size: 60px;
 
 }
 
@@ -385,14 +373,13 @@
 /*Summary: Hidden feature that need to be tested before making into live emmet.*/
 /*Note: */
 
-.Compact
-{
-    justify-content: center;
-    align-items: flex-end;
-}
+.Grid_A{grid-area: A;}
 
-.BeReal
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+.Grid_B{grid-area: B;}
+
+.Grid_C{grid-area: C;}
+
+.Grid_D{grid-area: D;}
+
+.Grid_E{grid-area: E;}
+

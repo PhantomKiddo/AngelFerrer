@@ -1,0 +1,60 @@
+@media (max-width: 750px) 
+{
+
+    /*-----{Menu_Tab}-----*/
+
+    li>a>img
+    {
+        width: 50%;
+
+        margin: 5%;
+
+        aspect-ratio: 3/2;
+    }
+
+    .Menu
+    {
+        width: 80%;
+        height: fit-content;
+
+        flex-direction: row;
+
+        position: fixed;
+        top: 70%;
+        left: 10%;
+
+        z-index: 1;
+
+        border-top-left-radius: 25px;
+        border-bottom-left-radius:25px;
+    }
+
+    .Menu:hover{animation-name: none;}
+
+    .Menu:not(:hover){animation-name: none;}
+
+
+
+    /*-----{Menu_Tab}-----*/
+
+    header
+    {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    footer
+    {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    };
+
+
+
+    /*-----{Menu_Tab}-----*/
+
+    .Glass
+    {
+        width: 90%;
+    }
+}
