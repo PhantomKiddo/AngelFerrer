@@ -166,6 +166,16 @@
             {
                 "Name": "State of Mind",
                 "Image": "Image/Class_Project/State_of_Mind_Project.png"
+            },
+
+            {
+                "Name": "Waffles-1",
+                "Image": "Image/Class_Project/Waffles-1.jpg"
+            },
+
+            {
+                "Name": "Waffles-2",
+                "Image": "Image/Class_Project/Waffles-2.jpg"
             }
         ],
 
@@ -212,6 +222,16 @@
             {
                 "Name": "Lillia - League of Legends",
                 "Image": "Image/Personal_Project/Lillia_-_League_of_Legends.png"
+            },
+
+            {
+                "Name": "Esmeralda",
+                "Image": "Image/Personal_Project/Esmeralda.jpg"
+            },
+
+            {
+                "Name": "Hearts <3",
+                "Image": "Image/Personal_Project/Heart(Final).gif"
             }
         ]
     }
